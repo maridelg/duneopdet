@@ -40,15 +40,13 @@ physics:
    producers:
    {
       # photon detector reconstruction
-      #ophit:     @local::dunefd_ophit
-      #opflash:   @local::dunefd_opflash
-      ophitspe:  @local::standard_ophit_finder_template
+      ophitspe:  @local::dune_ophit_finder_deco
       rns:       { module_type: "RandomNumberSaver" }
    }
 
    analyzers:
    {
-      ophitana:  @local::standard_ophitfindana
+      ophitana:  @local::dune_ophitfindana
    }
    
    
